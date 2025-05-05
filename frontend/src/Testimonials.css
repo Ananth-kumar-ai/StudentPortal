@@ -1,0 +1,35 @@
+.testimonials-section {
+    background: #0f172a;
+}
+
+.testimonial-card {
+    background: #1e293b;
+    border-left: 4px solid #38bdf8;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 191, 255, 0.1);
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(56, 189, 248, 0.15);
+    border-left-color: #0ea5e9;
+}
+
+.avatar-img {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.quote-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.feedback-text {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}

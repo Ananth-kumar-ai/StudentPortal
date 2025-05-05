@@ -1,0 +1,27 @@
+.about-section {
+    background: #0f172a; /* Slate dark */
+}
+
+.feature-card {
+    background: #1e293b; /* Slightly lighter dark */
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 191, 255, 0.2);
+}
+
+.feature-icon {
+    color: #38bdf8; /* Sky blue */
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+.feature-desc {
+    color: #cbd5e1; /* Cool light gray */
+    font-size: 0.95rem;
+}
