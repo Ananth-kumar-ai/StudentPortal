@@ -17,7 +17,7 @@ const Internals = () => {
       }
 
       try {
-        const response = await fetch('http://localhost:5000/api/internals', {
+        const response = await fetch('https://studentportal-g670.onrender.com/api/internals', {
           headers: {
             Authorization: `Bearer ${token}`, // Include the token in the request headers
           },
