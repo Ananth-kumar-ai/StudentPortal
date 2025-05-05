@@ -11,7 +11,7 @@ const Attendence = () => {
       const token = localStorage.getItem('token'); // Get the token from localStorage
 
       try {
-        const response = await fetch('http://localhost:5000/api/attendance', {
+        const response = await fetch('https://studentportal-g670.onrender.com/api/attendance', {
           headers: {
             Authorization: `Bearer ${token}`, // Include the token in the request headers
           },
