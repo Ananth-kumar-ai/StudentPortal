@@ -1,6 +1,12 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
+main().catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect('mongodb+srv://ananthkumarnalluri456:Munna1234%24@studentportal.jhlvy7q.mongodb.net/?retryWrites=true&w=majority&appName=studentportal');
+}
+
 // Function to generate random attendance (80-100%)
 const getRandomAttendance = () => Math.floor(Math.random() * 21) + 80;
 
@@ -56,7 +62,7 @@ userSchema.pre('save', async function (next) {
 // Compare the entered password with the hashed password
 userSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
-});
+};
 
 // Create the User model
 const User = mongoose.model('User', userSchema);
