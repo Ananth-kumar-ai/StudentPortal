@@ -11,7 +11,7 @@ const JWT_SECRET = 'your_jwt_secret_key'; // Replace with a secure key
 
 // Middleware
 app.use(cors({
-  origin: 'https://your-frontend-url.onrender.com'
+  origin: ''https://studentportal-frontend-c1cp.onrender.com''
 }));
 app.use(express.json());
 app.get('/', (req, res) => {
