@@ -10,7 +10,9 @@ const app = express();
 const JWT_SECRET = 'your_jwt_secret_key'; // Replace with a secure key
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://your-frontend-url.onrender.com'
+}));
 app.use(express.json());
 
 // Middleware to verify JWT
