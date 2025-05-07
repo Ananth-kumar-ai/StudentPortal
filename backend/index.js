@@ -14,7 +14,9 @@ app.use(cors({
   origin: 'https://your-frontend-url.onrender.com'
 }));
 app.use(express.json());
-
+app.get('/', (req, res) => {
+  res.send('Student Portal API is running');
+});
 // Middleware to verify JWT
 const authenticate = (req, res, next) => {
   const token = req.headers.authorization?.split(' ')[1]; // Extract token from "Bearer <token>"
