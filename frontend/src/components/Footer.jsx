@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <div className="row gy-4">
           {/* EduPortal Info */}
-          <div className="col-md-3">
+          <div className="col-6 col-sm-6 col-md-3">
             <h5 className="fw-bold">
               <i className="fas fa-graduation-cap me-2"></i>EduPortal
             </h5>
@@ -21,28 +21,31 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="col-md-3">
+          <div className="col-6 col-sm-6 col-md-3">
             <h6 className="fw-bold">QUICK LINKS</h6>
             <ul className="list-unstyled">
               <li><a href="#" className="text-light text-decoration-none">Home</a></li>
-              <li><a href="/login" className="text-light text-decoration-none">Login</a></li>
-              <li><a href="/signup" className="text-light text-decoration-none">Sign Up</a></li>
+              <li><a href="#" className="text-light text-decoration-none">About</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Dashboard</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Login</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Sign Up</a></li>
             </ul>
           </div>
 
           {/* Features */}
-          <div className="col-md-3">
+          <div className="col-6 col-sm-6 col-md-3">
             <h6 className="fw-bold">FEATURES</h6>
             <ul className="list-unstyled">
-              <li><a href="/att" className="text-light text-decoration-none">Attendance Tracking</a></li>
-              <li><a href="/int" className="text-light text-decoration-none">Internal Assessment</a></li>
-              <li><a href="/Time" className="text-light text-decoration-none">Timetable</a></li>
-              <li><a href="/Ann" className="text-light text-decoration-none">Announcements</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Attendance Tracking</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Internal Assessment</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Timetable</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Announcements</a></li>
+              <li><a href="#" className="text-light text-decoration-none">Learning Resources</a></li>
             </ul>
           </div>
 
           {/* Contact */}
-          <div className="col-md-3">
+          <div className="col-6 col-sm-6 col-md-3">
             <h6 className="fw-bold">CONTACT</h6>
             <ul className="list-unstyled">
               <li className="mb-2">
