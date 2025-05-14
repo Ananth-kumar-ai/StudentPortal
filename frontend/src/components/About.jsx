@@ -44,23 +44,36 @@ const features = [
     }
 ];
 
-const About = () => {
+const chunkArray = (arr, size) => {
+    const result = [];
+    for (let i = 0; i < arr.length; i += size) {
+      result.push(arr.slice(i, i + size));
+    }
+    return result;
+  };
+  
+  const About = () => {
+    const featureRows = chunkArray(features, 3); // Group into rows of 3
+  
     return (
-        <div className="container-fluid py-5 about-section text-light">
-            <h1 className="text-center mb-5 fw-bold">Student Dashboard Features</h1>
-            <div className="row g-4 px-4">
-                {features.map((feature, index) => (
-                    <div className="col-12 col-md-6 col-lg-4" key={index}>
-                        <div className="feature-card h-100 text-center">
-                            <FontAwesomeIcon icon={feature.icon} size="3x" className="feature-icon mb-3" />
-                            <h4 className="fw-semibold mb-2">{feature.title}</h4>
-                            <p className="feature-desc">{feature.description}</p>
-                        </div>
-                    </div>
-                ))}
+      <div className="container-fluid py-5 about-section text-light">
+        <h1 className="text-center mb-5 fw-bold">Student Dashboard Features</h1>
+  
+        {featureRows.map((row, index) => (
+          <div className="feature-row-wrapper mb-4" key={index}>
+            <div className={`feature-row ${index % 2 === 0 ? 'left-scroll' : 'right-scroll'}`}>
+              {[...row, ...row].map((feature, idx) => (
+                <div className="feature-card" key={idx}>
+                  <FontAwesomeIcon icon={feature.icon} size="3x" className="feature-icon mb-3" />
+                  <h4 className="fw-semibold mb-2">{feature.title}</h4>
+                  <p className="feature-desc">{feature.description}</p>
+                </div>
+              ))}
             </div>
-        </div>
+          </div>
+        ))}
+      </div>
     );
-};
+  };
 
 export default About;
