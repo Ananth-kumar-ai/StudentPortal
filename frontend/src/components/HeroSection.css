@@ -28,12 +28,10 @@
   animation: slideInRight 1s ease-out 0.5s forwards;
 }
 
-/* Optional hover effects */
 button:hover {
   transform: translateY(-3px);
 }
 
-/* Responsive layout */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -42,9 +40,14 @@ button:hover {
   }
 
   .hero .content {
-    padding-right: 0 !important;
+    padding-right: 0;
+  }
+
+  .spline {
+    display: none !important; /* Hides Spline model on mobile */
   }
 }
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -59,6 +62,6 @@ button:hover {
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #333;
-  width: 38ch; /* Set to the number of characters in your text */
+  width: 38ch;
   animation: typing 3s steps(38, end) forwards, blink 0.75s step-end infinite;
 }
