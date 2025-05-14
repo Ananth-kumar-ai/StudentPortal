@@ -31,7 +31,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right Side: Spline Model */}
-      <div style={styles.splineContainer}>
+      <div style={styles.splineContainer} className='spline'>
         <Spline
           scene="https://prod.spline.design/djq0SdCWtons2hOf/scene.splinecode"
           style={styles.spline}
