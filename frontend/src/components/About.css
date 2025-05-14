@@ -25,3 +25,47 @@
     color: #cbd5e1; /* Cool light gray */
     font-size: 0.95rem;
 }
+.feature-row-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .feature-row {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+  }
+  
+  .feature-card {
+    width: 320px; /* Fixed consistent width */
+    flex: 0 0 auto;
+    padding: 30px 20px;
+    margin: 20px;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Left to Right Scroll (odd rows) */
+  .left-scroll {
+    animation: scroll-left 6s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  /* Right to Left Scroll (even rows) */
+  .right-scroll {
+    animation: scroll-right 6s linear infinite;
+  }
+  
+  @keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+  
